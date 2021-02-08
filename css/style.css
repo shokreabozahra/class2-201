@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+
+
+
+
+#firstItem{
+    background-color: rgb(78, 177, 190);
+}
+
+
+.listItems{
+    background-color: rgb(224, 115, 115);
+}
+.listItem{
+    background-color: rgb(81, 219, 99);
+}
+.listitem{
+    background-color: rgb(60, 43, 156);
+}
+
+body{
+    background-color: rgb(83, 99, 105);
+}
