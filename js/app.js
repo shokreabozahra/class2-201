@@ -59,15 +59,18 @@ if (money == 'yes' || money == 'y') {
 }
 questionOfMoney();
 
-
-let major = prompt('Am I Civil Enginner')
+function questionOfMajor(){let major = prompt('Am I Civil Enginner')
 /* console.log(major) */
 if (major == 'yes' || major == 'y') {
     message = 'this is correct'
     score++
 } else if (major == 'no' || major == 'n') {
     message = 'this is wrong '
-} alert(message);
+}
+ alert(message);
+}
+questionOfMajor();
+
 alert('Welcome to my game you have 4 guesses. Guess from 1-10');
 let guess;
 for (let i = 0; i < 4; i++) {
