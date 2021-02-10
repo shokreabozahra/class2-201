@@ -20,8 +20,7 @@ if (work == 'yes' || work == 'y') {
 questionOfWork();
 
 
-
-let age = prompt('Am I 25 years old')
+function questionOfAge(){let age = prompt('Am I 25 years old')
 /* console.log(age)  */
 
 if (age == 'yes' || age == 'y') {
@@ -29,7 +28,10 @@ if (age == 'yes' || age == 'y') {
     score++
 } else if (age == 'no' || age == 'n') {
     message = 'this is wrong'
-} alert(message);
+}
+ alert(message);
+}
+questionOfAge();
 
 let country = prompt('do I live in Jordan')
 /* console.log(country) */
