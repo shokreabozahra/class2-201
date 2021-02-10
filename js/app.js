@@ -33,6 +33,7 @@ if (age == 'yes' || age == 'y') {
 }
 questionOfAge();
 
+function questionOfCountry(){
 let country = prompt('do I live in Jordan')
 /* console.log(country) */
 if (country == 'yes' || country == 'y') {
@@ -40,8 +41,10 @@ if (country == 'yes' || country == 'y') {
     score++
 } else if (country == 'no' || country == 'n') {
     message = 'this is wrong'
-} alert(message);
-
+}
+ alert(message);
+}
+questionOfCountry();
 
 let money = prompt('Am I Millionaire ☻')
 /* console.log(money)*/
