@@ -68,7 +68,10 @@ for (let i = 0; i < 4; i++) {
     } else if (guess > 5) {
         alert('too high');
     } else {
-        alert('you have to choose between 1-10')
+        alert('you have to choose between 1-10');
+    }
+    if (i == 3) {
+        alert('the correct number is'+ answer);
     }
 
 }
@@ -86,7 +89,7 @@ for (let j = 1; j <= 6; j++) {
         if (guesssport.toLowerCase() === favsport[i]) {
             userAnswer = true;
             score++;
-            alert(' correct , The possible answers are ' + favsport)
+            alert(' correct , My favorite sports ' + favsport)
             
             break;
         } else {
@@ -101,10 +104,10 @@ for (let j = 1; j <= 6; j++) {
     }
 }
 if (!userAnswer) {
-    confirm(" Hard luck! , The possible Answers " + favsport);
+    confirm(" Hard luck! , My favorite sports " + favsport);
     
 } else {
 
 }
-alert('your score out of 7 is ' + score + '☻');
+alert('your score  is ' + score + 'out of 7 ☻');
 
