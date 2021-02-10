@@ -63,9 +63,9 @@ for (let i = 0; i < 4; i++) {
         score++
         break;
 
-    } else if (guess == 1 || guess == 2 || guess == 3 || guess == 4 || guess == 5) {
+    } else if (guess < 5) {
         alert('too low');
-    } else if (guess == 6 || guess == 8 || guess == 9 || guess == 10) {
+    } else if (guess > 5) {
         alert('too high');
     } else {
         alert('you have to choose between 1-10')
@@ -73,22 +73,38 @@ for (let i = 0; i < 4; i++) {
 
 }
 
-let sport = ['football', 'steak', 'tennis', 'baseball', 'golf', 'shawerma'];
 
-for (let i = 0; i < sport.length; i++) {
-    guess = prompt('Take your time honey you have 6 guesses which of these items belong to sport?football,steak,tennis,baseball,golf,shawerma');
-    if (guess == 1 || guess == 3 || guess == 4 || guess == 5) {
-        alert('correct');
-        score++
-        break;
-    } else if (guess == 2 || guess == 6) {
-        alert('not correct');
+
+let userAnswer = false;
+let guesssport;
+
+let favsport = ['football', 'table tennis', 'tennis', 'baseball', 'golf', 'cricket'];
+
+for (let j = 1; j <= 6; j++) {
+    guesssport = prompt("What do you think my favorite sport? (There are 6 correct answers) & you have only" + "6" + "attempts");
+    for (let i = 0; i < favsport.length; i++) {
+        if (guesssport.toLowerCase() === favsport[i]) {
+            userAnswer = true;
+            score++;
+            alert(' correct , The possible answers are ' + favsport)
+            
+            break;
+        } else {
+            continue;
+        }
+
     }
+    if (userAnswer) {
+        break;
+    } else {
 
-
+    }
+}
+if (!userAnswer) {
+    confirm(" Hard luck! , The possible Answers " + favsport);
+    
+} else {
 
 }
-
-
-alert('your score is ' + score +'☻');
+alert('your score out of 7 is ' + score + '☻');
 
