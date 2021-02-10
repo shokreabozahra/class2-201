@@ -97,38 +97,40 @@ for (let i = 0; i < 4; i++) {
 }
 questionOfPlay();
 
-
-
-let userAnswer = false;
-let guesssport;
-
-let favsport = ['football', 'table tennis', 'tennis', 'baseball', 'golf', 'cricket'];
-
-for (let j = 1; j <= 6; j++) {
-    guesssport = prompt("What do you think my favorite sport? (There are 6 correct answers) & you have only" + "6" + "attempts");
-    for (let i = 0; i < favsport.length; i++) {
-        if (guesssport.toLowerCase() === favsport[i]) {
-            userAnswer = true;
-            score++;
-            alert(' correct , My favorite sports ' + favsport)
-            
+function questionOfFavsport(){
+    let userAnswer = false;
+    let guesssport;
+    
+    let favsport = ['football', 'table tennis', 'tennis', 'baseball', 'golf', 'cricket'];
+    
+    for (let j = 1; j <= 6; j++) {
+        guesssport = prompt("What do you think my favorite sport? (There are 6 correct answers) & you have only" + "6" + "attempts");
+        for (let i = 0; i < favsport.length; i++) {
+            if (guesssport.toLowerCase() === favsport[i]) {
+                userAnswer = true;
+                score++;
+                alert(' correct , My favorite sports ' + favsport)
+                
+                break;
+            } else {
+                continue;
+            }
+    
+        }
+        if (userAnswer) {
             break;
         } else {
-            continue;
-        }
-
-    }
-    if (userAnswer) {
-        break;
-    } else {
-
-    }
-}
-if (!userAnswer) {
-    confirm(" Hard luck! , My favorite sports " + favsport);
     
-} else {
-
+        }
+    }
+    if (!userAnswer) {
+        confirm(" Hard luck! , My favorite sports " + favsport);
+        
+    } else {
+    
+    }
+    alert('your score  is ' + score + 'out of 7 ☻');
+    
 }
-alert('your score  is ' + score + 'out of 7 ☻');
+questionOfFavsport();
 
