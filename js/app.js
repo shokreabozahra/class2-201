@@ -4,6 +4,8 @@ let userName = prompt('Hi, what is your name?')
 let message = '';
 // console.log(userName);
 alert('welcome ' + userName + ' lets play a guessing game')
+
+function questionOfWork(){
 let work = prompt('Did i work at company?')
 /* console.log(work)*/
 work.toLowerCase()
@@ -12,10 +14,13 @@ if (work == 'yes' || work == 'y') {
 } else if (work == 'no' || work == 'n') {
     message = 'this is correct'
     score++
-} alert(message);
+}
+ alert(message);
+}
+questionOfWork();
 
 
-let age = prompt('Am I 25 years old')
+function questionOfAge(){let age = prompt('Am I 25 years old')
 /* console.log(age)  */
 
 if (age == 'yes' || age == 'y') {
@@ -23,8 +28,12 @@ if (age == 'yes' || age == 'y') {
     score++
 } else if (age == 'no' || age == 'n') {
     message = 'this is wrong'
-} alert(message);
+}
+ alert(message);
+}
+questionOfAge();
 
+function questionOfCountry(){
 let country = prompt('do I live in Jordan')
 /* console.log(country) */
 if (country == 'yes' || country == 'y') {
@@ -32,27 +41,37 @@ if (country == 'yes' || country == 'y') {
     score++
 } else if (country == 'no' || country == 'n') {
     message = 'this is wrong'
-} alert(message);
+}
+ alert(message);
+}
+questionOfCountry();
 
-
-let money = prompt('Am I Millionaire ☻')
+function questionOfMoney(){
+    let money = prompt('Am I Millionaire ☻')
 /* console.log(money)*/
 if (money == 'yes' || money == 'y') {
     message = 'this is correct good job'
     score++
 } else if (money == 'no' || money == 'n') {
     message = 'this is wrong ☺'
-} alert(message);
+}
+ alert(message);
+}
+questionOfMoney();
 
-
-let major = prompt('Am I Civil Enginner')
+function questionOfMajor(){let major = prompt('Am I Civil Enginner')
 /* console.log(major) */
 if (major == 'yes' || major == 'y') {
     message = 'this is correct'
     score++
 } else if (major == 'no' || major == 'n') {
     message = 'this is wrong '
-} alert(message);
+}
+ alert(message);
+}
+questionOfMajor();
+
+function questionOfPlay(){
 alert('Welcome to my game you have 4 guesses. Guess from 1-10');
 let guess;
 for (let i = 0; i < 4; i++) {
@@ -75,39 +94,43 @@ for (let i = 0; i < 4; i++) {
     }
 
 }
+}
+questionOfPlay();
 
-
-
-let userAnswer = false;
-let guesssport;
-
-let favsport = ['football', 'table tennis', 'tennis', 'baseball', 'golf', 'cricket'];
-
-for (let j = 1; j <= 6; j++) {
-    guesssport = prompt("What do you think my favorite sport? (There are 6 correct answers) & you have only" + "6" + "attempts");
-    for (let i = 0; i < favsport.length; i++) {
-        if (guesssport.toLowerCase() === favsport[i]) {
-            userAnswer = true;
-            score++;
-            alert(' correct , My favorite sports ' + favsport)
-            
+function questionOfFavsport(){
+    let userAnswer = false;
+    let guesssport;
+    
+    let favsport = ['football', 'table tennis', 'tennis', 'baseball', 'golf', 'cricket'];
+    
+    for (let j = 1; j <= 6; j++) {
+        guesssport = prompt("What do you think my favorite sport? (There are 6 correct answers) & you have only" + "6" + "attempts");
+        for (let i = 0; i < favsport.length; i++) {
+            if (guesssport.toLowerCase() === favsport[i]) {
+                userAnswer = true;
+                score++;
+                alert(' correct , My favorite sports ' + favsport)
+                
+                break;
+            } else {
+                continue;
+            }
+    
+        }
+        if (userAnswer) {
             break;
         } else {
-            continue;
-        }
-
-    }
-    if (userAnswer) {
-        break;
-    } else {
-
-    }
-}
-if (!userAnswer) {
-    confirm(" Hard luck! , My favorite sports " + favsport);
     
-} else {
-
+        }
+    }
+    if (!userAnswer) {
+        confirm(" Hard luck! , My favorite sports " + favsport);
+        
+    } else {
+    
+    }
+    alert('your score  is ' + score + 'out of 7 ☻');
+    
 }
-alert('your score  is ' + score + 'out of 7 ☻');
+questionOfFavsport();
 
