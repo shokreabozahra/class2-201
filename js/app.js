@@ -71,6 +71,7 @@ if (major == 'yes' || major == 'y') {
 }
 questionOfMajor();
 
+function questionOfPlay(){
 alert('Welcome to my game you have 4 guesses. Guess from 1-10');
 let guess;
 for (let i = 0; i < 4; i++) {
@@ -93,6 +94,8 @@ for (let i = 0; i < 4; i++) {
     }
 
 }
+}
+questionOfPlay();
 
 
 
