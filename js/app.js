@@ -46,14 +46,18 @@ if (country == 'yes' || country == 'y') {
 }
 questionOfCountry();
 
-let money = prompt('Am I Millionaire ☻')
+function questionOfMoney(){
+    let money = prompt('Am I Millionaire ☻')
 /* console.log(money)*/
 if (money == 'yes' || money == 'y') {
     message = 'this is correct good job'
     score++
 } else if (money == 'no' || money == 'n') {
     message = 'this is wrong ☺'
-} alert(message);
+}
+ alert(message);
+}
+questionOfMoney();
 
 
 let major = prompt('Am I Civil Enginner')
