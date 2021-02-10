@@ -4,6 +4,8 @@ let userName = prompt('Hi, what is your name?')
 let message = '';
 // console.log(userName);
 alert('welcome ' + userName + ' lets play a guessing game')
+
+function questionOfWork(){
 let work = prompt('Did i work at company?')
 /* console.log(work)*/
 work.toLowerCase()
@@ -12,7 +14,11 @@ if (work == 'yes' || work == 'y') {
 } else if (work == 'no' || work == 'n') {
     message = 'this is correct'
     score++
-} alert(message);
+}
+ alert(message);
+}
+questionOfWork();
+
 
 
 let age = prompt('Am I 25 years old')
