@@ -26,3 +26,7 @@ h1{
 body{
     background-color: rgb(83, 99, 105);
 }
+
+p{
+  font-family: 'Bebas Neue', cursive;
+}

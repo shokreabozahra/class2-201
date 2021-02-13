@@ -2,12 +2,12 @@
 let score = 0;
 let userName = prompt('Hi, what is your name?')
 let message = '';
-// console.log(userName);
+ console.log(userName);
 alert('welcome ' + userName + ' lets play a guessing game')
 
 function questionOfWork(){
 let work = prompt('Did i work at company?')
-/* console.log(work)*/
+ console.log(work)
 work.toLowerCase()
 if (work == 'yes' || work == 'y') {
     message = 'this is wrong'
@@ -21,7 +21,7 @@ questionOfWork();
 
 
 function questionOfAge(){let age = prompt('Am I 25 years old')
-/* console.log(age)  */
+ console.log(age)  
 
 if (age == 'yes' || age == 'y') {
     message = 'this is correct'
@@ -35,7 +35,7 @@ questionOfAge();
 
 function questionOfCountry(){
 let country = prompt('do I live in Jordan')
-/* console.log(country) */
+ console.log(country) 
 if (country == 'yes' || country == 'y') {
     message = 'this is correct'
     score++
@@ -48,7 +48,7 @@ questionOfCountry();
 
 function questionOfMoney(){
     let money = prompt('Am I Millionaire ☻')
-/* console.log(money)*/
+ console.log(money)
 if (money == 'yes' || money == 'y') {
     message = 'this is correct good job'
     score++
@@ -60,7 +60,7 @@ if (money == 'yes' || money == 'y') {
 questionOfMoney();
 
 function questionOfMajor(){let major = prompt('Am I Civil Enginner')
-/* console.log(major) */
+ console.log(major) 
 if (major == 'yes' || major == 'y') {
     message = 'this is correct'
     score++
